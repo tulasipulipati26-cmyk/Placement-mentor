@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Placement Mentor - Your Gateway to Career Success</title>
+  
+  <!-- Modern Typography (Outfit for Headers, Inter for Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Global & Component Styles -->
+  <link rel="stylesheet" href="src/index.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Canvas Confetti CDN for Achievements -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body class="dark-theme"> <!-- Defaults to dark theme for premium aesthetics -->
+  <div id="app-root" class="app-layout">
+    <!-- Sidebar Navigation (dynamically rendered) -->
+    <aside id="sidebar-container" class="sidebar"></aside>
+
+    <!-- Main Workspace Area -->
+    <div class="main-container">
+      <!-- App Header (dynamically rendered) -->
+      <header id="header-container" class="header"></header>
+
+      <!-- Active View Container -->
+      <main id="view-container" class="view-content"></main>
+    </div>
+  </div>
+
+  <!-- Notification Overlay Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Application Logic Scripts (Loaded sequentially for safe global namespacing) -->
+  <script src="src/mockData.js"></script>
+  <script src="src/state.js"></script>
+  <script src="src/components/Header.js"></script>
+  <script src="src/components/Sidebar.js"></script>
+  <script src="src/views/Dashboard.js"></script>
+  <script src="src/views/ResumeAnalyzer.js"></script>
+  <script src="src/views/MockInterview.js"></script>
+  <script src="src/views/Tests.js"></script>
+  <script src="src/views/Prediction.js"></script>
+  <script src="src/views/SkillGap.js"></script>
+  <script src="src/views/CareerChatbot.js"></script>
+  <script src="src/views/CareerCenter.js"></script>
+  <script src="src/views/AdminPanel.js"></script>
+  <script src="src/views/Questions.js"></script>
+  <script src="src/views/StudyPlanner.js"></script>
+  <script src="src/views/SuccessPredictor.js"></script>
+  <script src="src/views/TwinSimulator.js"></script>
+  <script src="src/views/ResumeJdMatch.js"></script>
+  <script src="src/views/CompanyTracker.js"></script>
+  <script src="src/views/RiskDetector.js"></script>
+  <script src="src/views/EmotionAnalyzer.js"></script>
+  <script src="src/views/SalaryPredictor.js"></script>
+  <script src="src/views/AppTracker.js"></script>
+  <script src="src/views/CareerGPS.js"></script>
+  <script src="src/views/ProjectGenerator.js"></script>
+  <script src="src/views/BattleMode.js"></script>
+  <script src="src/views/DailyMentor.js"></script>
+  <script src="src/views/SuccessHeatmap.js"></script>
+  <script src="src/views/LinkedInOptimizer.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
